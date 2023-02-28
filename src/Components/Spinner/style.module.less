@@ -1,0 +1,26 @@
+.preloader__image_animate{
+  background-image: url("../../assets/img/spiner.svg");
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  transition: 1.5s linear;
+  animation: up-down 1.5s infinite;
+}
+@keyframes up-down{
+  0%{
+      top: calc(50%);
+  }
+  100%{
+      top: calc(50%);
+  }
+  from{
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
