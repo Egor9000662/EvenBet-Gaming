@@ -14,4 +14,4 @@
 -pixelperfect.
 
 5.Ссылка на макет:
--
+-https://www.figma.com/file/ZLn7zqPTOYDQl0FRKmoPrN/sample?node-id=0%3A1
