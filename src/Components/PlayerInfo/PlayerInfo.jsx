@@ -1,23 +1,19 @@
-import userData from "../../data/user.json";
 import { useState } from "react";
+import * as img from "./img";
+import userData from "../../data/user.json";
 import Spinner from "../Spinner/Spinner";
 import Loader from "../Loader/Loader";
 import style from "./style.module.less";
-import avatar from "../../assets/img/avatar.png";
-import star from "../../assets/img/star.svg"
-import privateClose from '../../assets/img/privateClose.png'
-import privateOpen from '../../assets/img/privarteOpen.png'
 
 export default function PlayerInfo() {
   const [cashState, setCashState] = useState(false);
-  const { userName, cash, typeGame } = userData[0];
+  const { userName, cash, typeGame,progress } = userData
 
-
-  function handlePrivateClose(){
-    setCashState(true)
+  function handlePrivateClose() {
+    setCashState(true);
   }
-  function handlePrivateOpen(){
-    setCashState(false)
+  function handlePrivateOpen() {
+    setCashState(false);
   }
 
   return (
@@ -32,30 +28,34 @@ export default function PlayerInfo() {
         <div className={style.user_name}>
           <p>{userName}</p>
           <div className={style.stars}>
-            <img src={star} alt="star" />
-            <img src={star} alt="star" />
-            <img src={star} alt="star" />
-            <img src={star} alt="star" />
-            <img src={star} alt="star" />
+            <img src={img.star} alt="star" />
+            <img src={img.star} alt="star" />
+            <img src={img.star} alt="star" />
+            <img src={img.star} alt="star" />
+            <img src={img.star} alt="star" />
           </div>
         </div>
         <div className={style.avatar}>
-          <img src={avatar} alt="avatar" />
+          <img src={img.avatar} alt="avatar" />
         </div>
+        <div className={style.wrapper_cash}>
         {cashState ? (
           <div className={style.cashOpen}>
-            <button onClick={handlePrivateOpen}><img src={privateOpen} alt="open" /></button>
+            <button onClick={handlePrivateOpen}>
+              <img src={img.privateOpen} alt="open" />
+            </button>
             <span>{cash}</span>
-            </div>
+          </div>
         ) : (
           <div className={style.cashClose}>
-            <img src={privateClose} alt="close" onClick={handlePrivateClose} />
+              <img onClick={handlePrivateClose} src={img.privateClose} alt="close" />
             <span>Show balance</span>
           </div>
         )}
+        </div>
       </div>
       <div className={style.wrapper_loader}>
-        <Loader />
+        <Loader progress={progress}  />
       </div>
     </>
   );

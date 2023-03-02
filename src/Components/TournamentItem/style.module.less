@@ -1,0 +1,168 @@
+@import '../../assets/style/vars.less';
+
+.container_tournament {
+    width: 100%;
+    height: 78px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: start;
+
+    .registering {
+        width: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: @green;
+        border-radius: 4px;
+
+        span {
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 10px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .registering__active {
+            margin-right: 5px;
+            transform: rotate(-90deg);
+        }
+
+        .registering__disabled {
+            margin-right: 5px;
+            transform: rotate(-90deg);
+        }
+    }
+
+    .info {
+        padding: 8px;
+        width: 100%;
+
+        &__interactive {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__type {
+            display: flex;
+            align-items: center;
+            margin-bottom: 9px;
+
+            img {
+                margin-right: 4px;
+            }
+
+            span {
+                max-width: 150px;
+                padding: 2px;
+                font-size: 8px;
+                line-height: 10px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                border: solid 1px #FFFFFF;
+                border-radius: 2px;
+                margin-right: 5px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        &__title {
+            max-width: 160px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: #FFFFFF;
+            margin-bottom: 9px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        &__button_interactive {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .button {
+            width: 80px;
+            height: 34px;
+            border-radius: 4px;
+            border: none;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 12px;
+            text-transform: uppercase;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding: 11px 4px;
+        }
+
+        &__button_active {
+            background: @green;
+        }
+
+        &__button_disabled {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        &__data {
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+            line-height: 12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        &__date {
+            margin-right: 33px;
+
+            img {
+                margin-right: 6px;
+            }
+        }
+
+        &__wrapper_tickets_cup {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__tickets {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 7px;
+            }
+
+            span {
+                max-width: 55px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        &__cup {
+
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 5px;
+            }
+
+            span {
+                max-width: 44px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

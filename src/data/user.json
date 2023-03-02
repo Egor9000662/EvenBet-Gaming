@@ -1,1 +1,9 @@
-[{ "id": 1, "userName": "LongUserName", "cash": "$100,500.000","typeGame":"Poker" }]
+
+  {
+    "id": 1,
+    "userName": "LongUserName",
+    "cash": "$100,500.00",
+    "typeGame": "Poker",
+    "progress": "70%"
+  }
+

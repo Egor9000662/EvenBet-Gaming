@@ -14,4 +14,12 @@
 -pixelperfect.
 
 5.Ссылка на макет:
--https://www.figma.com/file/ZLn7zqPTOYDQl0FRKmoPrN/sample?node-id=0%3A1
+-https://www.figma.com/file/ZLn7zqPTOYDQl0FRKmoPrN/sample?node-id=0%3A1 
+
+6.Для работы с асинхронным кодом использоваля
+-Подход с сервисом запросов
+-Обработка ошибок try,catch ,блоки
+-fetch
+
+7.Для хранения данных использовался 
+-json-sever (https://www.npmjs.com/package/json-server)

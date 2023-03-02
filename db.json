@@ -1,0 +1,64 @@
+{
+  "tournaments": [
+    {
+      "id": 1,
+      "type": "NL 2-7 Triple Draw NL 2-7 Triple Draw NL 2-7 Triple Draw NL 2-7 Triple Draw",
+      "title": "OFC Pineapple",
+      "date": "12:00 pm, 28 July",
+      "tickets": "1000/1000",
+      "bonus": "1000000",
+      "status": "active",
+      "bookmark": true
+    },
+    {
+      "id": 2,
+      "type": "NL Holdem NL 2-7 Triple Draw NL 2-7 Triple Draw NL 2-7 Triple Draw NL 2-7 Triple Draw",
+      "title": "OFC Pineapple NL Holdem NL 2-7 Triple Draw NL 2-7 Triple Draw NL 2-7 Triple Draw NL 2-7 Triple Draw ",
+      "date": "12:00 pm, 28 July",
+      "tickets": "1/6",
+      "bonus": "100",
+      "status": "disabled",
+      "bookmark": true
+    },
+    {
+      "id": 3,
+      "type": "NL OFC/pineapple prg",
+      "title": "Hourly Freeroll",
+      "date": "12:00 pm, 28 July",
+      "tickets": "1/10 000",
+      "bonus": "1000",
+      "status": "active",
+      "bookmark": true
+    },
+    {
+      "id": 4,
+      "type": "PL Omaha h/l",
+      "title": "Rapid Tournament",
+      "date": "12:00 pm, 28 July",
+      "tickets": "0/0",
+      "bonus": "1000",
+      "status": "disabled",
+      "bookmark": false
+    },
+    {
+      "id": 5,
+      "type": "NL 6 cards omaha h/l",
+      "title": "PL Omaha Knockout",
+      "date": "12:00 pm, 28 July",
+      "tickets": "0/100",
+      "bonus": "146",
+      "status": "disabled",
+      "bookmark": false
+    },
+    {
+      "id": 6,
+      "type": "NL 2-7 Triple Draw",
+      "title": "OFC Pineapple",
+      "date": "12:00 pm, 28 July",
+      "tickets": "1000/1000",
+      "bonus": "1000000",
+      "status": "disabled",
+      "bookmark": false
+    }
+  ]
+}
