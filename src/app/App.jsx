@@ -32,6 +32,9 @@ function App() {
       <div className="wrapper_player">
         <PlayerInfo />
       </div>
+
+
+      
       <div className="wrapper_tournament">
         {tournaments?.map((item) => (
           <TournamentItem
